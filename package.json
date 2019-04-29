@@ -1,10 +1,11 @@
 {
   "name": "@pyfarm/instascan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webcam-driven QR code scanner.",
-  "main": "index.js",
+  "main": "dist/instascan.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
   },
   "files": [
     "src/",

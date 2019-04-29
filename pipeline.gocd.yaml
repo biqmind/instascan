@@ -10,6 +10,16 @@ pipelines:
         blacklist:
           - "*.md"
     stages:
+      - build:
+          clean_workspace: true
+          jobs:
+            verify:
+              tasks:
+                - exec:
+                    run_if: passed
+                    command: yarn
+                    arguments:
+                      - build
       - CNPMPublishJob:
           fetch_materials: true
           keep_artifacts: false
