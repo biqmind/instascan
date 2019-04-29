@@ -13,8 +13,11 @@ pipelines:
       - build:
           clean_workspace: true
           jobs:
-            verify:
+            build:
               tasks:
+                - exec:
+                    run_if: passed
+                    command: yarn
                 - exec:
                     run_if: passed
                     command: yarn
