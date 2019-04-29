@@ -1,7 +1,7 @@
 const cleanRegex = new RegExp('\\s*\\([0-9a-f]+(:[0-9a-f]+)?\\)\\s*$');
 function cameraName(label) {
-  let clean = label.replace(cleanRegex, '');
-  return clean || label || null;
+  const cleanName = label.replace(cleanRegex, '');
+  return cleanName || label || null;
 }
 
 class MediaError extends Error {
