@@ -1,5 +1,6 @@
+const cleanRegex = new Regex('\s*\([0-9a-f]+(:[0-9a-f]+)?\)\s*$');
 function cameraName(label) {
-  let clean = label.replace(/\s*\([0-9a-f]+(:[0-9a-f]+)?\)\s*$/, '');
+  let clean = label.replace(cleanRegex, '');
   return clean || label || null;
 }
 
