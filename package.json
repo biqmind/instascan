@@ -1,6 +1,6 @@
 {
   "name": "@pyfarm/instascan",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Webcam-driven QR code scanner.",
   "main": "index.js",
   "scripts": {
