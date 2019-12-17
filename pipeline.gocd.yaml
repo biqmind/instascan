@@ -48,9 +48,10 @@ pipelines:
                     command: bash
                     arguments:
                       - -c
-                      - echo -e $(echo "${REGISTRY_NPMRC}") > .npmrc
+                      - echo -e $(echo "${REGISTRY_NPMRC}") > ~/.npmrc
                 - exec:
                     run_if: passed
-                    command: npm
+                    command: bash
                     arguments:
-                      - publish
+                      - -c
+                      - npm publish --registry ${NPM_CONFIG_REGISTRY}
