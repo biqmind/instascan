@@ -48,7 +48,7 @@ pipelines:
                     command: bash
                     arguments:
                       - -c
-                      - echo "${REGISTRY_NPMRC} > .npmrc
+                      - echo "${REGISTRY_NPMRC}" > .npmrc
                 - exec:
                     run_if: passed
                     command: npm
