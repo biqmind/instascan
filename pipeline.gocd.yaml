@@ -7,6 +7,7 @@ pipelines:
     environment_variables:
       NODE_ENV: development
       NPM_CONFIG_REGISTRY: https://cnpm.oc.lanternedge.com/
+      NPM_CONFIG_STRICT_SSL: false
     materials:
       instascan:
         git: git@github.com:biqmind/instascan.git
