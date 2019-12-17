@@ -1,19 +1,19 @@
 {
   "name": "@pyfarm/instascan",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Webcam-driven QR code scanner.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build"
+    "build": "babel src -d dist"
   },
   "files": [
-    "src/",
+    "dist/",
     "index.js"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schmich/instascan.git"
+    "url": "git+https://github.com/biqmind/instascan.git"
   },
   "keywords": [
     "qr",
@@ -25,13 +25,14 @@
     "webcam",
     "realtime"
   ],
-  "author": "Chris Schmich <schmch@gmail.com>",
+  "author": "Biqmind Dev <dev@biqmind.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schmich/instascan/issues"
+    "url": "https://github.com/biqmind/instascan/issues"
   },
-  "homepage": "https://github.com/schmich/instascan",
+  "homepage": "https://github.com/biqmind/instascan",
   "devDependencies": {
+    "@babel/cli": "^7.7.5",
     "@babel/core": "^7.0.0",
     "@babel/plugin-transform-regenerator": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -45,7 +46,6 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
     "fsm-as-promised": "^0.13.0",
     "visibilityjs": "^1.2.3",
     "webrtc-adapter": "^1.4.0"
