@@ -9,7 +9,7 @@ pipelines:
       NPM_CONFIG_REGISTRY: https://cnpm.oc.lanternedge.com/
       NPM_CONFIG_STRICT_SSL: false
     secure_variables:
-      REGISTRY_NPMRC: AES:ymTDf5A2C+dL65qw9M8Qhg==:Adb8JhpYLjtDEDAVua26vtpqDH4aqpiOWc4fAtrznpcv5tMyR2qffiq5LoFsGGZv5FwHOLw8FpknSO4j+03jkC+3Po6aLx+ee0QQyhgUUCTDnXq9TFr6BJbLAj9peyzt3IFBuDFhTtvHtd0esU4IJVwFlTsYo5K6nybmkuhW1gqJqVZlhrwZAompsJV+nkwZI30hx4fTViz9qAjcGF9GYM8VCFzI+H0sisCRiNBfzl+qk6uh2/pP4gBz9neU6/Mgw5E/0WoiMaSut48SJNtviCqq01GTbKwqdHBD7fOW0Ne07JftA6rw9a1jNBE5rFBjAJGOWCeXRwSlpWl+jt9WkToFmaRignO/DFEv333+/9/x3UDJD+Wkz3OKsWChYPFIyyE9EzsFy9Vuc2cRpJDMf5FUJi4grQdQhGZNfN0OS3LPJ9P8SomuqJNL12zM7LNAKqquDEoTkUvcviqhx8rvsmvLWAY/T3hrxmWKI+maAjIMXiAKVMKnUMuKrYB5Yf4DpdbOqAPtxCBVAVO2o+cWCBhas3r9CMnrlpT1MuVrfjU=
+      REGISTRY_NPMRC: AES:JsFPVJ3zdkbG9Ho93/MBjw==:BaHP4GIuLPWrQfetRdbn3EDmTd/IWHzSrIaYKEx8ov1Kc2vPg7dbNU5sxRpENsj7ZRzcMKtW4gLq3ljuCFRYVxM2uReFpPFpAi4ZTLYRrRXrCHYiiB0fJwURO99CICQu2GUYsCQfTZSr4dBjhtP7i2ucqdsdB5xXq+nRgvrM1OgVLGFVBQscXqiiKo8DjLEqW0n4GBJVWaDBtiDDl+rmsaWyAzD/KXxFQy1/hbts4QEy7093/J1YiiH6giJ9gA8xLpnBHoJRuG8ECqcdRjKw1ubhpjZ5zY+YaHJL4n8RwzLNWZIaoD2oQ2xiDhGwkG09sKDm3tduhOJPY9IF5wvksbAYBtuTL/3JVcB4NcxLRbJhyF+d+eV+NSr8GBECgVlk
     materials:
       instascan:
         git: git@github.com:biqmind/instascan.git
