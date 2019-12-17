@@ -9,7 +9,7 @@ pipelines:
       NPM_CONFIG_REGISTRY: https://cnpm.oc.lanternedge.com/
       NPM_CONFIG_STRICT_SSL: false
     secure_variables:
-      NPM_NPMRC: AES:1QhAbv05U714TWC9eR/wmg==:Mun6k9aXg2iz9rNy5/F69ExON1k0nKXR9ohyiWOKvc5TBo7UmB96o7nP2OPaN7ynsWzsrz51r2O6SCJ2L2Po7qAFevUfXUdeblRkXgpud6r5lKZUKW3+6vMjCgSQyLubcoAQOksHeYRZEidCIgueQBdsOqnAmFnpharahp1KXcHfnaYKWXsdQE4SHwpIDpSkMQHBtvFPbDXXifQNQxIqsnMXFxSOQEmVWWZ5w6/UjxXegb3WUHKmuIATzRw1UE/fFsh8XRqOpWbT2XqF1iy02t6el8eADtB9I5sEHmduPyy1iBUEDEhd4rSrnU4l6zjApaip2GCEaeE/yni7/ar3TyyVMLLkssbnYxeWDI2KkARjL6gnoSpZ422sMfdqFK8TdtZ7EwS1Sre93ZE9efWkOs4vUtmalLhbxss6o1WRb9x2fNBn9EiCYsK0Af7SMytkOIO4VVx3Pc2AxZusdZFE+DWb8rLUByoulsAtuTiquz7jsh9xAgq+KP6n7Cw2t+y3
+      REGISTRY_NPMRC: AES:1QhAbv05U714TWC9eR/wmg==:Mun6k9aXg2iz9rNy5/F69ExON1k0nKXR9ohyiWOKvc5TBo7UmB96o7nP2OPaN7ynsWzsrz51r2O6SCJ2L2Po7qAFevUfXUdeblRkXgpud6r5lKZUKW3+6vMjCgSQyLubcoAQOksHeYRZEidCIgueQBdsOqnAmFnpharahp1KXcHfnaYKWXsdQE4SHwpIDpSkMQHBtvFPbDXXifQNQxIqsnMXFxSOQEmVWWZ5w6/UjxXegb3WUHKmuIATzRw1UE/fFsh8XRqOpWbT2XqF1iy02t6el8eADtB9I5sEHmduPyy1iBUEDEhd4rSrnU4l6zjApaip2GCEaeE/yni7/ar3TyyVMLLkssbnYxeWDI2KkARjL6gnoSpZ422sMfdqFK8TdtZ7EwS1Sre93ZE9efWkOs4vUtmalLhbxss6o1WRb9x2fNBn9EiCYsK0Af7SMytkOIO4VVx3Pc2AxZusdZFE+DWb8rLUByoulsAtuTiquz7jsh9xAgq+KP6n7Cw2t+y3
     materials:
       instascan:
         git: git@github.com:biqmind/instascan.git
@@ -48,7 +48,7 @@ pipelines:
                     command: bash
                     arguments:
                       - -c
-                      - echo $NPM_NPMRC > .npmrc
+                      - echo "${REGISTRY_NPMRC} > .npmrc
                 - exec:
                     run_if: passed
                     command: npm
