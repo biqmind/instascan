@@ -7,8 +7,6 @@ pipelines:
     environment_variables:
       NODE_ENV: development
       NPM_CONFIG_STRICT_SSL: false
-    secure_variables:
-      REGISTRY_NPMRC: AES:JsFPVJ3zdkbG9Ho93/MBjw==:BaHP4GIuLPWrQfetRdbn3EDmTd/IWHzSrIaYKEx8ov1Kc2vPg7dbNU5sxRpENsj7ZRzcMKtW4gLq3ljuCFRYVxM2uReFpPFpAi4ZTLYRrRXrCHYiiB0fJwURO99CICQu2GUYsCQfTZSr4dBjhtP7i2ucqdsdB5xXq+nRgvrM1OgVLGFVBQscXqiiKo8DjLEqW0n4GBJVWaDBtiDDl+rmsaWyAzD/KXxFQy1/hbts4QEy7093/J1YiiH6giJ9gA8xLpnBHoJRuG8ECqcdRjKw1ubhpjZ5zY+YaHJL4n8RwzLNWZIaoD2oQ2xiDhGwkG09sKDm3tduhOJPY9IF5wvksbAYBtuTL/3JVcB4NcxLRbJhyF+d+eV+NSr8GBECgVlk
     materials:
       instascan:
         git: git@github.com:biqmind/instascan.git
@@ -42,12 +40,6 @@ pipelines:
                     arguments:
                       - -rf
                       - src
-                - exec:
-                    run_if: passed
-                    command: bash
-                    arguments:
-                      - -c
-                      - echo -e $(echo "${REGISTRY_NPMRC}") > ~/.npmrc
                 - exec:
                     run_if: passed
                     command: bash
